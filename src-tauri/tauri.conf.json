@@ -1,0 +1,53 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "ProVerbs",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "fs": {
+        "all": true,
+        "scope": ["$RESOURCE/*"]
+      },
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "resources": [
+        "aruljohn-Bible-kjv/*"
+      ],
+      "active": true,
+      "targets": "all",
+      "identifier": "com.unclesimon.proverbs",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "ProVerbs",
+        "width": 1280,
+        "height": 720
+      }
+    ]
+  }
+}

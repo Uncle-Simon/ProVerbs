@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProVerbs</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="instruction" >Memorize the verse below</h1>
+      <h1><span id="memory-verse">For wisdom is better than rubies; And all the things that may be desired are not to be compared to it.</span></h1>
+      <!-- <hr class="solid"> -->
+
+      <form class="row" id="verse-form" autocomplete="off">
+        <textarea id="verse-input" placeholder="Enter your answer..."></textarea>
+        <button type="submit">Answer</button>
+      </form>
+      
+      <p>
+        <button id="hide">I've memorized the verse</button>
+      </p>
+      <p>
+        <button id="skip">Skip</button>
+      </p>
+
+      <h2 id="bible-percent"></h2>
+      <h2 id="bible-correct"></h2>
+    </div>
+  </body>
+</html>
